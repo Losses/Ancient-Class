@@ -226,7 +226,7 @@ ancient.use('/', express.static('../webApp'));
         socket.emit('init', {msg: 'welcome to ancient classroom!'});
 
         socket.on('whatsNow', function () {
-            if (now !== '') socket.emit('switchPage', now);
+            if (now !== '') socket.emit('now', now);
         });
 
         socket.on('activityData', function (data) {
