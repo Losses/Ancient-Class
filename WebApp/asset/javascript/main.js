@@ -60,6 +60,11 @@ controller('globController', function ($scope, $rootScope, $location, db, socket
         $location.path(data).replace();
     });
 
+    socket.on('now', function (data) {
+        if (['/teacher', '/login'].indexOf($location.path()) !== -1) return false;
+        $location.path(data).replace();
+    });
+
     socket.on('alert', function (data) {
         alert(data);
     });
