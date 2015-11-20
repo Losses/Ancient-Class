@@ -24,4 +24,21 @@ build/Release
 
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
-node_modules
+Server/node_modules
+
+# Server database
+Server/data
+
+# Server tmp files
+Server/_tmp
+Server/journal
+Server/*.0
+Server/*.ns
+Server/*.lock
+Server/storage.bson
+
+# nw.js binary
+PersitationView/bin
+
+# I love webstorm!
+.idea
