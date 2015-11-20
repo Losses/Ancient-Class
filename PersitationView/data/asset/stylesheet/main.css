@@ -1,0 +1,427 @@
+@font-face {
+    font-family: 'fzSun';
+    src: url('../font/MF.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'fzSun', sans-serif !important;
+    color: white;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+.console {
+    left: 50%;
+    bottom: 0;
+    width: 400px;
+    height: 50px;
+    margin-left: -200px;
+    background: rgba(255, 255, 255, 0.4);
+    border: 0;
+    border-bottom: 1px solid black;
+    text-align: center;
+    position: fixed;
+}
+
+.background_warp b {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    display: block;
+    position: fixed;
+    z-index: -1;
+}
+
+.fullscreen_video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    display: table;
+}
+
+.fullscreen_video video {
+    width: 100%;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+#ancient_audio {
+    opacity: 0;
+}
+
+.ghost {
+    opacity: 0 !important;
+
+    text-align: center;
+    color: gray;
+}
+
+.ghost.active {
+    opacity: 1 !important;
+}
+
+.ghost img {
+    width: 250px;
+    height: 250px;
+}
+
+.ghost h1 {
+    font-size: 55px;
+    line-height: 3em;
+}
+
+.ghost footer {
+    margin-top: 120px;
+    color: #aaa;
+    font-size: 30px;
+}
+
+.ghost.video video {
+    left: 0;
+    width: 100%;
+    position: fixed;
+}
+
+#talk {
+    width: auto;
+    position: relative;
+}
+
+#talk .support {
+    width: 1200px;
+    height: 700px;
+}
+
+#talk b {
+    white-space: nowrap;
+    position: absolute;
+    display: block;
+    transition: all 300ms;
+}
+
+#talk .words {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 200ms;
+    z-index: -1;
+}
+
+#your_hobby {
+    width: 800px;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+}
+
+#your_hobby .submitted_warp {
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 800px;
+    position: absolute;
+}
+
+#your_hobby .submitted {
+    left: 0;
+    bottom: 0;
+    width: 800px;
+    position: absolute;
+}
+
+#your_hobby .submitted li {
+    margin: 20px 0;
+    font-size: 80px;
+    text-align: center;
+}
+
+#your_hobby .submitted li i {
+    top: -8px;
+    padding: 0 20px;
+    position: relative;
+}
+
+/*webfonts*/
+@font-face {
+    font-family: 'hobby';
+    src: url('../font/hobby.eot?22859680');
+    src: url('../font/hobby.eot?22859680#iefix') format('embedded-opentype'),
+    url('../font/hobby.woff?22859680') format('woff'),
+    url('../font/hobby.ttf?22859680') format('truetype'),
+    url('../font/hobby.svg?22859680#hobby') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="hobby-"]:before, [class*=" hobby-"]:before {
+    font-family: "hobby";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.hobby-Volleyball:before {
+    content: '\e800';
+}
+
+/* '' */
+.hobby-Dumbbell:before {
+    content: '\e801';
+}
+
+/* '' */
+.hobby-tea:before {
+    content: '\e802';
+}
+
+/* '' */
+.hobby-soccer:before {
+    content: '\e803';
+}
+
+/* '' */
+.hobby-tennis:before {
+    content: '\e804';
+}
+
+/* '' */
+.hobby-game:before {
+    content: '\e805';
+}
+
+/* '' */
+.hobby-poker:before {
+    content: '\e806';
+}
+
+/* '' */
+.hobby-chat:before {
+    content: '\e807';
+}
+
+/* '' */
+.hobby-travel:before {
+    content: '\e808';
+}
+
+/* '' */
+.hobby-dance:before {
+    content: '\e809';
+}
+
+/* '' */
+.hobby-pencil:before {
+    content: '\e80a';
+}
+
+/* '' */
+.hobby-wine:before {
+    content: '\e80b';
+}
+
+/* '' */
+.hobby-fishing:before {
+    content: '\e80c';
+}
+
+/* '' */
+.hobby-Camera:before {
+    content: '\e80d';
+}
+
+/* '' */
+.hobby-compass:before {
+    content: '\e80e';
+}
+
+/* '' */
+.hobby-book:before {
+    content: '\e80f';
+}
+
+/* '' */
+.hobby-TV:before {
+    content: '\e810';
+}
+
+/* '' */
+.hobby-Internet:before {
+    content: '\e811';
+}
+
+/* '' */
+.hobby-shopping:before {
+    content: '\e812';
+}
+
+/* '' */
+.hobby-coding:before {
+    content: '\e813';
+}
+
+/* '' */
+.hobby-node:before {
+    content: '\e814';
+}
+
+/* '' */
+.hobby-baseball:before {
+    content: '\e815';
+}
+
+/* '' */
+.hobby-basketball:before {
+    content: '\e816';
+}
+
+/* '' */
+.hobby-Smoking:before {
+    content: '\e817';
+}
+
+/* '' */
+.hobby-knitting:before {
+    content: '\e818';
+}
+
+/* '' */
+.hobby-glass:before {
+    content: '\e819';
+}
+
+/* '' */
+.hobby-flower:before {
+    content: '\e81a';
+}
+
+/* '' */
+.hobby-cat:before {
+    content: '\e81b';
+}
+
+/* '' */
+.hobby-scissors:before {
+    content: '\e81c';
+}
+
+/* '' */
+.hobby-hotdog:before {
+    content: '\e81d';
+}
+
+/* '' */
+.hobby-Swimming:before {
+    content: '\e81e';
+}
+
+/* '' */
+.hobby-pant:before {
+    content: '\e81f';
+}
+
+/* '' */
+.hobby-icecream:before {
+    content: '\e820';
+}
+
+/* '' */
+.hobby-atom:before {
+    content: '\e821';
+}
+
+/* '' */
+.hobby-newspaper:before {
+    content: '\e822';
+}
+
+/* '' */
+.hobby-heart:before {
+    content: '\e823';
+}
+
+/* '' */
+
+#homework h2 {
+    font-size: 80px;
+    line-height: 3em;
+    text-align: center;
+}
+
+#homework p {
+    text-align: center;
+}
+
+#timer .timer {
+    font-size: 250px;
+    text-align: center;
+    letter-spacing: 20px;
+}
+
+#timer .button_set {
+    width: 100%;
+    bottom: -100px;
+    text-align: center;
+    position: absolute;
+}
+
+#timer .button_set button {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 3px;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#thanks {
+    color: white;
+    text-align: center;
+}
+
+#thanks .title {
+    font-size: 200px;
+}
+
+#thanks footer {
+    color: white;
+    bottom: -100px;
+    font-size: 20px;
+    line-height: 2em;
+    position: relative;
+}

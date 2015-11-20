@@ -1,0 +1,732 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Microsoft JhengHei', 'microsoft yahei', 'WenQuanYi Micro Hei', sans-serif;
+    font-size: 20px;
+}
+
+ul.no_style {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a.no_style:link,
+a.no_style:visited {
+    text-decoration: none;
+}
+
+header.colorful {
+    padding: 18px 10px;
+    height: 35px;
+    position: relative;
+    transition: all 300ms;
+}
+
+header.colorful h2 {
+    top: -3px;
+    left: 64px;
+    margin: 18px 0;
+    color: white;
+    font-size: 26px;
+    font-weight: normal;
+    line-height: 35px;
+    position: absolute;
+}
+
+header .back {
+    background: transparent;
+    border: 0;
+}
+
+header .back img {
+    width: 30px;
+    height: 30px;
+}
+
+article {
+    margin: 20px;
+    font-size: 18px;
+    line-height: 2em;
+}
+
+article h3 {
+    margin: 50px 0;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+}
+
+article h4 {
+    margin: 10px 0;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.kick {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    position: fixed;
+    display: none;
+}
+
+.face img {
+    border-radius: 50%;
+}
+
+.button_set {
+    margin: 30px 0;
+    text-align: center;
+    display: block;
+}
+
+.button_set button {
+    margin: 5px;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 30px;
+    background: #9fa8da;
+}
+
+.button_set .yes {
+    color: white;
+    background: #3f51b5;
+    font-weight: bold;
+}
+
+.background {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    transition: all 300ms;
+}
+
+/*主菜单*/
+
+.menu .hello {
+    width: 70px;
+    margin: 20px auto;
+    position: relative;
+    overflow: visible;
+}
+
+.menu .hello img {
+    width: 70px;
+    height: 70px;
+}
+
+.menu .hello .name {
+    top: 0;
+    width: 5em;
+    overflow: visible;
+    margin-left: 95px;
+    padding: 25px 0;
+    font-size: 20px;
+    line-height: 20px;
+    position: absolute;
+    opacity: 0;
+    transition: all 300ms;
+}
+
+.menu .hello:hover .name {
+    opacity: 1;
+}
+
+.menu ul a {
+    min-height: 180px;
+    margin: 10px;
+    background: orange no-repeat 40px 60px;
+    background-size: 170px 170px;
+    border-radius: 5px;
+    color: white;
+    font-size: 30px;
+    line-height: 1em;
+    display: block;
+    position: relative;
+    transition: all 300ms;
+}
+
+.menu ul a:link,
+.menu ul a:visited {
+    text-decoration: none;
+}
+
+.menu ul span {
+    top: 50%;
+    right: 20px;
+    margin-top: -15px;
+    position: absolute;
+    transition: all 300ms;
+}
+
+.menu ul a:hover {
+    background-position: 40px 0;
+}
+
+.menu ul a:hover span {
+    right: 40px;
+}
+
+.menu .book {
+    background-image: url('../image/book.svg');
+}
+
+.menu .homework {
+    background-color: crimson;
+    background-image: url('../image/heart.svg');
+}
+
+.menu .about {
+    background-color: #3f51b5;
+    background-image: url('../image/question.svg');
+}
+
+/*登陆界面*/
+
+.login header {
+    height: 300px;
+    background: firebrick url('../image/login_title.jpg') center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.login header h2 {
+    left: 40px;
+    bottom: 40px;
+    margin: 0;
+    color: white;
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 1em;
+    text-shadow: 0 0 2px black;
+    position: absolute;
+}
+
+.login form span {
+    display: block;
+}
+
+.login .id_input {
+    text-align: center;
+    display: block;
+}
+
+.login .id_input input {
+    width: 3em;
+    border: 0;
+    border-bottom: 2px solid #3f51b5;
+    font-size: 40px;
+    text-align: center;
+    transition: all 300ms;
+}
+
+.login .id_input input:focus {
+    border-bottom: 4px solid #3f51b5;
+}
+
+.login .face {
+    width: 150px;
+    margin: -75px auto 0 auto;
+    position: relative;
+}
+
+.login .face img {
+    width: 150px;
+    height: 150px;
+}
+
+.login .center_text {
+    font-size: 30px;
+    line-height: 3em;
+    text-align: center;
+}
+
+/*教材界面*/
+.book ul {
+    margin: 20px;
+}
+
+.book ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.book ul button {
+    width: calc(100% - 20px);
+    border: 0;
+    margin: 10px;
+    padding: 20px 40px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+/*活动页面*/
+
+@font-face {
+    font-family: 'hobby';
+    src: url('../font/hobby.eot?22859680');
+    src: url('../font/hobby.eot?22859680#iefix') format('embedded-opentype'),
+    url('../font/hobby.woff?22859680') format('woff'),
+    url('../font/hobby.ttf?22859680') format('truetype'),
+    url('../font/hobby.svg?22859680#hobby') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="hobby-"]:before, [class*=" hobby-"]:before {
+    font-family: "hobby";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.hobby-Volleyball:before {
+    content: '\e800';
+}
+
+/* '' */
+.hobby-Dumbbell:before {
+    content: '\e801';
+}
+
+/* '' */
+.hobby-tea:before {
+    content: '\e802';
+}
+
+/* '' */
+.hobby-soccer:before {
+    content: '\e803';
+}
+
+/* '' */
+.hobby-tennis:before {
+    content: '\e804';
+}
+
+/* '' */
+.hobby-game:before {
+    content: '\e805';
+}
+
+/* '' */
+.hobby-poker:before {
+    content: '\e806';
+}
+
+/* '' */
+.hobby-chat:before {
+    content: '\e807';
+}
+
+/* '' */
+.hobby-travel:before {
+    content: '\e808';
+}
+
+/* '' */
+.hobby-dance:before {
+    content: '\e809';
+}
+
+/* '' */
+.hobby-pencil:before {
+    content: '\e80a';
+}
+
+/* '' */
+.hobby-wine:before {
+    content: '\e80b';
+}
+
+/* '' */
+.hobby-fishing:before {
+    content: '\e80c';
+}
+
+/* '' */
+.hobby-Camera:before {
+    content: '\e80d';
+}
+
+/* '' */
+.hobby-compass:before {
+    content: '\e80e';
+}
+
+/* '' */
+.hobby-book:before {
+    content: '\e80f';
+}
+
+/* '' */
+.hobby-TV:before {
+    content: '\e810';
+}
+
+/* '' */
+.hobby-Internet:before {
+    content: '\e811';
+}
+
+/* '' */
+.hobby-shopping:before {
+    content: '\e812';
+}
+
+/* '' */
+.hobby-coding:before {
+    content: '\e813';
+}
+
+/* '' */
+.hobby-node:before {
+    content: '\e814';
+}
+
+/* '' */
+.hobby-baseball:before {
+    content: '\e815';
+}
+
+/* '' */
+.hobby-basketball:before {
+    content: '\e816';
+}
+
+/* '' */
+.hobby-Smoking:before {
+    content: '\e817';
+}
+
+/* '' */
+.hobby-knitting:before {
+    content: '\e818';
+}
+
+/* '' */
+.hobby-glass:before {
+    content: '\e819';
+}
+
+/* '' */
+.hobby-flower:before {
+    content: '\e81a';
+}
+
+/* '' */
+.hobby-cat:before {
+    content: '\e81b';
+}
+
+/* '' */
+.hobby-scissors:before {
+    content: '\e81c';
+}
+
+/* '' */
+.hobby-hotdog:before {
+    content: '\e81d';
+}
+
+/* '' */
+.hobby-Swimming:before {
+    content: '\e81e';
+}
+
+/* '' */
+.hobby-pant:before {
+    content: '\e81f';
+}
+
+/* '' */
+.hobby-icecream:before {
+    content: '\e820';
+}
+
+/* '' */
+.hobby-atom:before {
+    content: '\e821';
+}
+
+/* '' */
+.hobby-newspaper:before {
+    content: '\e822';
+}
+
+/* '' */
+.hobby-heart:before {
+    content: '\e823';
+}
+
+/* '' */
+
+.activity .srt_background {
+    height: 300px;
+    position: absolute;
+}
+
+.activity .icon_select {
+    padding: 15px;
+    text-align: center;
+}
+
+.activity .icon_select button {
+    width: 90px;
+    height: 90px;
+    margin: 10px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.activity .icon_select button::before {
+    left: -0.1em;
+    font-size: 48px;
+    position: relative;
+}
+
+.activity .icon_select button[class*="noFix"]::before {
+    top: 0.2em;
+    left: 0;
+    font-size: 50px;
+    position: relative;
+}
+
+.select_title {
+    margin: 80px 0;
+    text-align: center;
+}
+
+.select_title span {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: white;
+    font-size: 30px;
+}
+
+.activity .hobby_icon {
+    padding: 50px 0;
+    color: white;
+    font-size: 120px;
+    text-align: center;
+    display: block;
+}
+
+.activity .hobby_name_container {
+    text-align: center;
+    display: block;
+}
+
+.activity .hobby_name {
+    width: 250px;
+    margin: 50px 0 20px 0;
+    padding: 10px 40px;
+    border: 0;
+    border-bottom: 2px solid #3f51b5;
+    font-size: 40px;
+    text-align: center;
+}
+
+.activity .hobby_name:focus {
+    border-bottom: 4px solid #3f51b5;
+}
+
+.activity .submited {
+    border: 0 !important;
+    background: white;
+    color: darkslategray;
+}
+
+.activity .introduce {
+    width: calc(100% - 85px);
+    height: 6em;
+    margin: 0 20px;
+    padding: 20px;
+    border: gray 1px dotted;
+    font-size: 25px;
+    text-align: center;
+    resize: none;
+}
+
+.activity .name_screen {
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: white;
+    transition: top 400ms;
+    display: table;
+    position: fixed;
+    z-index: 2;
+}
+
+.activity .name_screen.show {
+    top: 0;
+}
+
+.activity .name_screen .name {
+    font-size: 70px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.homework .content {
+    margin: 20px;
+}
+
+.homework .content .introduce {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+.homework .content p {
+    font-size: 18px;
+    line-height: 1.8em;
+}
+
+.homework .content h4 {
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 3em;
+}
+
+.homework .content h4::before,
+.homework .content h4::after {
+    content: ' ~ ';
+}
+
+.homework .hobby_list li {
+    margin: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed lightgray;
+}
+
+.about > div {
+    padding: 30px;
+}
+
+.about .logo {
+    height: 100%;
+    color: #444;
+    text-align: center;
+}
+
+.about .logo .logo_image {
+    width: 200px;
+}
+
+.about .logo h2 {
+    margin: 20px 0 40px 0;
+    font-size: 35px;
+    font-weight: normal;
+    line-height: 2em;
+}
+
+.about .source {
+    font-size: 14px;
+    font-family: 'consolas', sans-serif;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.about li {
+    margin: 10px 0;
+}
+
+.about .title {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.setting_list ul,
+.setting_list button {
+    margin: 0;
+    padding: 0;
+}
+
+.setting_list li {
+    margin: 20px;
+    padding: 0;
+    background: #8bc34a;
+    border-radius: 5px;
+    transition: all 300ms;
+}
+
+.setting_list li:hover {
+    background: #689f38;
+}
+
+.setting_list li.warning {
+    background: #f44336;
+}
+
+.setting_list li.warning:hover {
+    background: #d32f2f;
+}
+
+.setting_list ul button {
+    width: 100%;
+    padding: 20px 0;
+    border: 0;
+    color: white;
+    background: none;
+    font-size: 18px;
+    transition: all 300ms;
+}
+
+.setting_list ul button:active {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.setting_list ul .double button {
+    width: calc(50% - 5px);
+}

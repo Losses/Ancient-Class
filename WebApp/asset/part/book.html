@@ -1,0 +1,20 @@
+<section class="book">
+    <header class="colorful" style="background-color:{{headerColor}}">
+        <button class="back" data-ng-click="back()"><img src="./asset/image/back.svg" alt="返回"></button>
+        <h2>{{title}}</h2>
+    </header>
+    <ul data-ng-show="!showContent" class="no_style catelog">
+        <li>
+            <button style="background-color:#f44336" data-ng-click="showPage('book','寻找你的爱好','#f44336')">
+                教材
+            </button>
+        </li>
+        <li>
+            <button style="background-color:#03a9f4" data-ng-click="showPage('interest','折个超级纸飞机','#03a9f4')">
+                兴趣材料
+            </button>
+        </li>
+    </ul>
+
+    <article data-ng-show="showContent" ng-bind-html="articleContent"></article>
+</section>

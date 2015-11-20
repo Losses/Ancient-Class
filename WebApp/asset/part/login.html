@@ -1,0 +1,35 @@
+<section class="login">
+    <header>
+        <h2 data-ng-show="!checkingName">登录</h2>
+    </header>
+    <form data-ng-show="!checkingName">
+        <label>
+            <span class="center_text">请输入你的学号</span>
+
+            <span class="id_input"><input name="id" class="id" type="text"/></span>
+        </label>
+
+        <div class="button_set">
+            <button class="check yes" data-ng-click="checkName()">确认</button>
+        </div>
+    </form>
+    <div class="check" data-ng-show="checkingName && !confirmed">
+        <div class="face">
+            <img src="./asset/image/default_face.png" alt="头像"/>
+        </div>
+        <p class="center_text name">你是{{name}}吗？</p>
+
+        <div class="button_set">
+            <button class="confirm no" data-ng-click="checkingName = false">不是</button>
+            <button class="confirm yes" data-ng-click="toMenu(); confirmed = true">是的</button>
+        </div>
+    </div>
+    <div class="greeting" data-ng-show="checkingName && confirmed">
+        <div class="face">
+            <img src="./asset/image/default_face.png" alt="头像"/>
+        </div>
+        <p class="center_text">
+            嘿！{{name}}，<br>欢迎来到远古教室！
+        </p>
+    </div>
+</section>

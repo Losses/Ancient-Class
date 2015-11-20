@@ -1,0 +1,30 @@
+<section class="activity">
+    <div class="background" style="background:{{themeColor}};"
+         data-ng-class="{srt_background:srtBackground}"></div>
+    <div class="name_screen"
+         data-ng-class="{show:showShuffleName}" data-ng-dblclick="showShuffleName = false">
+        <p class="name">{{shuffleResultName}}</p>
+    </div>
+    <section class="icon_select" data-ng-show="!cardView">
+        <p class="select_title" style="color:{{themeColor}};"><span>选择一个图标</span></p>
+        <button class="hobby-{{i}}" style="color:{{themeColor}}"
+                data-ng-click="selectIcon(i)" data-ng-repeat="i in iconset"></button>
+    </section>
+    <section class="name_card" data-ng-show="cardView">
+        <form>
+            <div class="hobby_icon hobby-{{selectedIcon}}"
+                 data-ng-click='selectAgain()'></div>
+            <label class="hobby_name_container">
+                <input class="hobby_name" placeholder="你的爱好是？"
+                       data-ng-class="{submited:submited}" data-ng-disabled="submited">
+            </label>
+            <textarea class="introduce" placeholder="介绍一下你的爱好"
+                      data-ng-class="{submited:submited}" data-ng-disabled="submited"></textarea>
+
+            <div class="button_set">
+                <button class="yes" data-ng-click="submit()" data-ng-show="!submited">完成</button>
+                <button data-ng-click="modify()" data-ng-show="submited">修改</button>
+            </div>
+        </form>
+    </section>
+</section>

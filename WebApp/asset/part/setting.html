@@ -1,0 +1,23 @@
+<section class="setting setting_list">
+    <header class="colorful" style="background-color:{{headerColor}}">
+        <button class="back" data-ng-click="back()"><img src="./asset/image/back.svg" alt="返回"></button>
+        <h2>{{title}}</h2>
+    </header>
+    <ul class="no_style">
+        <li>
+            <button data-ng-click="moe()">跟老师卖个萌</button>
+        </li>
+
+        <li>
+            <button data-ng-click="logout()">注销</button>
+        </li>
+
+        <li>
+            <button data-ng-click="about()">关于本程序</button>
+        </li>
+
+        <li class="warning">
+            <button data-ng-click="clearCache()">清空本地缓存</button>
+        </li>
+    </ul>
+</section>

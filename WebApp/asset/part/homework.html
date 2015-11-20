@@ -1,0 +1,20 @@
+<section class="homework">
+    <header class="colorful" style="background-color:{{headerColor}}">
+        <button class="back" data-ng-click="back()"><img src="./asset/image/back.svg" alt="返回"></button>
+        <h2>{{title}}</h2>
+    </header>
+    <div class="content">
+        <div class="description">
+            <p class="introduce">
+                请你利用两周的时间尝试去体验一下一件或两件你的同学的爱好，两周后的心理课上我们来分享心得。
+            </p>
+        </div>
+        <ul class="hobby_list no_style">
+            <li data-ng-repeat="h in homework">
+                <h4>{{h.ssName}}的爱好：{{h.title}}</h4>
+
+                <p>{{h.introduce}}</p>
+            </li>
+        </ul>
+    </div>
+</section>

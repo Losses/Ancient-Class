@@ -1,0 +1,29 @@
+<section class="teacher setting_list">
+    <header class="colorful" style="background-color:{{headerColor}}">
+        <button class="back" data-ng-click="back()"><img src="./asset/image/back.svg" alt="返回"></button>
+        <h2>{{title}}</h2>
+    </header>
+    <ul class="no_style">
+        <li class="double">
+            <button>上翻一页</button>
+            <button>下翻一页</button>
+        </li>
+
+        <li class="double">
+            <button data-ng-click="startActivity()">开始活动</button>
+            <button data-ng-click="releaseLock()">释放锁窗</button>
+        </li>
+
+        <li>
+            <button data-ng-click="shuffle()">Shuffle</button>
+        </li>
+
+        <li>
+            <button data-ng-click="sendHomework()">下发作业</button>
+        </li>
+
+        <li class="warning">
+            <button data-ng-click="systemInit()">重置系统</button>
+        </li>
+    </ul>
+</section>

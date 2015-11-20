@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="library/impressJs/impress.css" type="text/css" rel="stylesheet"/>
+    <link href="asset/stylesheet/main.css" type="text/css" rel="stylesheet"/>
+    <title>寻找你的爱好 | Ancient Classroom</title>
+</head>
+<body class="impress-not-supported">
+
+<div class="background_warp"></div>
+<div class="fullscreen_video"></div>
+<div id="ancient_audio">
+    <audio controls></audio>
+</div>
+
+<div class="fallback-message">
+    <p>啊，你的浏览器真糟糕 =。=~</p>
+</div>
+
+<div id="impress">
+    <div id="logo" class="step ghost" data-x="0" data-y="0" data-z="1000"
+         data-background="#fff">
+        <img src="asset/image/logo.svg">
+
+        <h1>远古教室</h1>
+        <footer>东八区失地工作组旗下开源产品</footer>
+    </div>
+    <div id="title" class="step" data-x="0" data-y="0"
+         data-background="asset/image/background.png" data-audio-stop="1">
+        <h1>寻找你的爱好</h1>
+
+        <p>Losses Territory Studio·Don</p>
+    </div>
+
+    <div id="imagination" class="step" data-x="-1000" data-y="-1000"
+         data-background="asset/image/park.jpeg"
+         data-audio="asset/audio/imagine.ogg">
+    </div>
+
+    <div id="import_video" class="step ghost video" data-x="-1000" data-y="-1000"
+         data-background="asset/image/background.png" data-audio-stop="1"
+         data-video="asset/video/hobby.ogv">
+    </div>
+
+    <div id="talk" class="step" data-x="-2500" data-y="-500"
+         data-background="asset/image/background.png">
+        <div class="words">
+
+        </div>
+
+        <div class="support">
+            <form id="hobby_show">
+                <input name="hobby_name" class="new_hobby console"/>
+            </form>
+        </div>
+    </div>
+
+    <div id="everyone" class="step" data-x="-1000" data-y="900">
+        <h1>独特的爱好</h1>
+    </div>
+
+    <div id="japan" class="step ghost video" data-x="-1000" data-y="900"
+         data-background="asset/image/background.png"
+         data-video="asset/video/japan.ogv">
+    </div>
+
+    <div id="america" class="step" data-x="-1000" data-y="900"
+         data-background="asset/image/plane.jpeg">
+    </div>
+
+    <div id="your_hobby" class="step" data-x="200" data-y="1000"
+         data-background="asset/image/background.png">
+        <div class="submitted_warp">
+            <ul class="submitted"></ul>
+        </div>
+    </div>
+
+    <div id="timer" class="step" data-x="1300" data-y="500"
+         data-background="asset/image/background.png">
+        <div class="timer">02:00</div>
+
+        <div class="button_set">
+            <button id="start_counter">开始计时</button>
+            <button id="end_counter">结束计时</button>
+        </div>
+    </div>
+
+    <div id="homework" class="step" data-x="1500" data-y="-500"
+         data-background="asset/image/background.png">
+        <h2>作业</h2>
+
+        <p>
+            请各位同学利用两周的时间尝试去体验一下一件或两件你的同学的爱好，两周后的心理课上我们来分享心得。
+        </p>
+    </div>
+
+    <div id="thanks" class="step ghost" data-scale="5" data-x="0" data-y="0"
+         data-background="asset/image/background.png">
+        <p class="title">谢谢</p>
+        <footer>
+            <p>远古教室</p>
+            <p>东八区·失地工作组旗下开源课程</p>
+        </footer>
+    </div>
+</div>
+
+<script src="library/impressJs/impress.js"></script>
+<script src="library/jquery/jquery-1.11.3.min.js"></script>
+<script src="asset/javascript/main.js"></script>
+</body>
+</html>
